@@ -1,0 +1,23 @@
+/* src/components/MasonryGrid.module.css */
+.grid {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  column-count: 1;
+  column-gap: 14px;
+  padding-bottom: 24px;
+}
+
+/* 2 columns */
+@media (min-width: 520px) {
+  .grid {
+    column-count: 2;
+  }
+}
+
+/* 3 columns */
+@media (min-width: 900px) {
+  .grid {
+    column-count: 3;
+    column-gap: 18px;
+  }
+}

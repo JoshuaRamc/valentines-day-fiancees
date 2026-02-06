@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+/* src/App.css */
+:root {
+  --fade-duration: 320ms;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body {
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  font-family: inherit;
 }
 
-@keyframes App-logo-spin {
+a {
+  color: inherit;
+}
+
+.screen {
+  animation: screenIn var(--fade-duration) ease both;
+}
+
+@keyframes screenIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(8px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }

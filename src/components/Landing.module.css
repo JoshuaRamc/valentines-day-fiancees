@@ -1,0 +1,82 @@
+/* src/components/Landing.module.css */
+.wrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: radial-gradient(circle at top, #ffe0ec, #fff7fb 50%, #ffffff);
+}
+
+.card {
+  width: min(720px, 100%);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 70, 130, 0.18);
+  border-radius: 24px;
+  padding: 28px 20px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #b01248;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: #6b2a3f;
+  font-size: 16px;
+}
+
+.actions {
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.yes {
+  background: linear-gradient(135deg, #ff2e74, #ff6aa5);
+  color: white;
+}
+
+.no {
+  background: #fff;
+  color: #b01248;
+  border: 1px solid rgba(176, 18, 72, 0.25);
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+@media (min-width: 520px) {
+  .card {
+    padding: 40px 40px;
+  }
+  .title {
+    font-size: 44px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}

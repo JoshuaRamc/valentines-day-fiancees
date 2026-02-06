@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from "react";
+import "./App.css";
 
-function App() {
+import Landing from "./components/Landing";
+import NoScreen from "./components/NoScreen";
+import YesGallery from "./components/YesGallery";
+
+const SCREENS = {
+  LANDING: "LANDING",
+  NO: "NO",
+  YES: "YES",
+};
+
+export default function App() {
+  const [screen, setScreen] = useState(SCREENS.LANDING);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="screen">
+      {screen === SCREENS.LANDING && (
+        <Landing
+          onYes={() => setScreen(SCREENS.YES)}
+          onNo={() => setScreen(SCREENS.NO)}
+        />
+      )}
+
+      {screen === SCREENS.NO && (
+        <NoScreen onBack={() => setScreen(SCREENS.LANDING)} />
+      )}
+
+      {screen === SCREENS.YES && (
+        <YesGallery onBack={() => setScreen(SCREENS.LANDING)} />
+      )}
     </div>
   );
 }
-
-export default App;
