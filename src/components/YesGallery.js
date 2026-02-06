@@ -108,7 +108,7 @@ export default function YesGallery({ onBack }) {
           </button>
         </div>
         <p className={styles.note}>
-          ✨ Special moments waiting for you... ✨
+          ✨ Our first and only Valentine's Day as fiancees!✨
         </p>
       </header>
 
