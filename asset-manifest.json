@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/valentines-day-fiancees/static/css/main.ce4ea31c.css",
-    "main.js": "/valentines-day-fiancees/static/js/main.829b33bf.js",
+    "main.js": "/valentines-day-fiancees/static/js/main.f36b485c.js",
     "static/js/453.dde76d10.chunk.js": "/valentines-day-fiancees/static/js/453.dde76d10.chunk.js",
     "index.html": "/valentines-day-fiancees/index.html",
     "main.ce4ea31c.css.map": "/valentines-day-fiancees/static/css/main.ce4ea31c.css.map",
-    "main.829b33bf.js.map": "/valentines-day-fiancees/static/js/main.829b33bf.js.map",
+    "main.f36b485c.js.map": "/valentines-day-fiancees/static/js/main.f36b485c.js.map",
     "453.dde76d10.chunk.js.map": "/valentines-day-fiancees/static/js/453.dde76d10.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce4ea31c.css",
-    "static/js/main.829b33bf.js"
+    "static/js/main.f36b485c.js"
   ]
 }
